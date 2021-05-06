@@ -7,7 +7,7 @@ export default function HeroSection() {
     <HeroWrapper>
 
       <HeroPic>
-        <img src="./imgfolder/HeroPic.jpeg" alt="profile-pic" style={{ borderRadius:'50%', height: 300}}  />
+        <img src="./assets/HeroPic.jpeg" alt="profile-pic" style={{ borderRadius:'50%', height: 300}}  />
         <div> 
           <HeroName> João Duarte</HeroName>
             <HR/>

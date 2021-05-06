@@ -12,4 +12,21 @@ body {
   color:white;
   max-width: 1000px;
 }
+
+.vertical-timeline-element-content {
+  background-color: #312f2f;
+  box-shadow: 0 0 10px #555;
+  padding: 2em !important;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}
+
 `

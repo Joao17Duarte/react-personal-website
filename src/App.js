@@ -3,7 +3,6 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import WorkExp from "./components/WorkExp/WorkExp";
 
 
-
 export default function App() {
   return (
     <>
@@ -36,6 +35,13 @@ export default function App() {
 
         </div>
         <WorkExp />
+        <div>Contacts
+          <ul>
+            <li>Contact 123</li>
+            <li>Contact 123</li>
+            <li>Contact 123</li> 
+          </ul>
+        </div>
       </AppWrapper>
     </>
   )
