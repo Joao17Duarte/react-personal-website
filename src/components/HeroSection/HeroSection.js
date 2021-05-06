@@ -6,22 +6,19 @@ export default function HeroSection() {
   <>
     <HeroWrapper>
 
-    <HeroPic>
-        <img src="./imgfolder/HeroPic.jpeg" alt="profile-pic" style={{ borderRadius:'50%', height: 300}}  />
-      <div> 
-        <HeroName> João Duarte</HeroName>
-        <HR/>
-        <HeroJob>Frontend Developer</HeroJob>
-        <HR/>
-
-      </div>
-    </HeroPic>
-    <AboutMe>
-          About me  
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate odit, amet ducimus nemo optio ab at provident maiores enim harum nostrum. Iusto cupiditate saepe aperiam aut praesentium fugit laboriosam eos? Ea eum minima nobis facere reprehenderit aut quae! Error nobis aperiam reiciendis praesentium eaque repellendus explicabo impedit, earum consequatur veritatis.</p>
-    </AboutMe>
-
-
+      <HeroPic>
+        <img src="./assets/HeroPic.jpeg" alt="profile-pic" style={{ borderRadius:'50%', height: 300}}  />
+        <div> 
+          <HeroName> João Duarte</HeroName>
+            <HR/>
+          <HeroJob>Frontend Developer</HeroJob>
+            <HR/>
+        </div>
+      </HeroPic>
+      <AboutMe>
+            About me  
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate odit, amet ducimus nemo optio ab at provident maiores enim harum nostrum. Iusto cupiditate saepe aperiam aut praesentium fugit laboriosam eos? Ea eum minima nobis facere reprehenderit aut quae! Error nobis aperiam reiciendis praesentium eaque repellendus explicabo impedit, earum consequatur veritatis.</p>
+      </AboutMe>
     </HeroWrapper>
     
 
@@ -47,7 +44,6 @@ const HeroName = styled.h1`
 
 const HeroJob = styled.p`
   text-transform: uppercase;
-  
 `
 
 const HR = styled.hr`
