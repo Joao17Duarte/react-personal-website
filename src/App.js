@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import HeroSection from "./components/HeroSection/HeroSection";
+import WorkExp from "./components/WorkExp/WorkExp";
 
 
 
@@ -34,23 +35,7 @@ export default function App() {
           </ul>
 
         </div>
-        <div>
-          
-          Work Experience 
-
-          <ul>
-            <li>2021</li>
-            <p>neuefische bootcamp</p>
-            <li>2020</li>
-            <p>Spa-Therapist</p>
-            <li>2019</li>
-            <p>Spa-Therapist</p>
-            <li>2018</li>
-            <p>Spa-Therapist</p>
-            <li>2017</li>
-            <p>Student</p>
-          </ul>
-        </div>
+        <WorkExp />
       </AppWrapper>
     </>
   )
