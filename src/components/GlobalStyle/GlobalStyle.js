@@ -32,6 +32,10 @@ body {
     font-size: 14px !important;
     padding: 10px  !important;
   }
+  svg {
+    font-size: 2em;
+  }
+  
 }
 
 ` 

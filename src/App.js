@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import Contacts from "./components/Contacts/Contacts";
 import HeroSection from "./components/HeroSection/HeroSection";
 import WorkExp from "./components/WorkExp/WorkExp";
 
@@ -35,13 +36,7 @@ export default function App() {
 
         </div>
         <WorkExp />
-        <div>Contacts
-          <ul>
-            <li>Contact 123</li>
-            <li>Contact 123</li>
-            <li>Contact 123</li> 
-          </ul>
-        </div>
+        <Contacts />
       </AppWrapper>
     </>
   )

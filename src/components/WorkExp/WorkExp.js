@@ -1,8 +1,7 @@
 import styled from "styled-components/macro";
-// import { Route, Switch } from 'react-router-dom'
-import { ReactComponent as SchoolIcon } from "./school.svg"
-import { ReactComponent as WorkIcon } from "./work.svg"
-// import './WorkExp.css'
+
+import { FaGraduationCap } from 'react-icons/fa';
+import { FaLaptop } from 'react-icons/fa';
 import timelineElements from "./TimelineElements"
 
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
@@ -29,11 +28,10 @@ export default function WorkExp() {
 
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               date={element.date}
-              
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+              icon={isWorkIcon ? <FaLaptop /> : <FaGraduationCap />}
               
             >
               <Title>
