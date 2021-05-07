@@ -72,6 +72,7 @@ const Location = styled.h5`
 
 const JobDescription = styled.p`
   margin: 1.5em 0 !important;
+  font-size:2em;
 `
 
 const Button = styled.a`

@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import Contacts from "./components/Contacts/Contacts";
+import CodeLanguage from "./components/CodeLanguage/CodeLanguage";
 import HeroSection from "./components/HeroSection/HeroSection";
 import WorkExp from "./components/WorkExp/WorkExp";
 
@@ -12,16 +13,7 @@ export default function App() {
         <HeroSection />
         
 
-        <div>
-        
-          Stacks of Choice
-
-          <ul>
-            <li>React</li>
-            <li>Js</li>
-            <li>HTML & CSS</li>
-          </ul>
-        </div>
+        <CodeLanguage />
 
         <div>
           

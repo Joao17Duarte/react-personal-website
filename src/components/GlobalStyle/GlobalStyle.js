@@ -28,6 +28,9 @@ body {
     color: white;
     margin-top: 1.5em;
   }
+  p{
+    font-size: 1rem !important;
+  }
   a {
     font-size: 14px !important;
     padding: 10px  !important;
