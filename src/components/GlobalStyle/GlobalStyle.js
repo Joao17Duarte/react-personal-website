@@ -24,9 +24,13 @@ body {
   .vertical-timeline-element-date {
     display: block !important;
     float: none !important;
-    color: rgb(44, 44, 44);
+    color: white;
     margin-top: 1.5em;
+  }
+  a {
+    font-size: 14px !important;
+    padding: 10px  !important;
   }
 }
 
-`
+` 
