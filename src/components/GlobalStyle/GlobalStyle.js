@@ -11,6 +11,7 @@ body {
   background-color: #312f2f;
   color:white;
   max-width: 1000px;
+  line-height: 1.6;
 }
 
 .vertical-timeline-element-content {
