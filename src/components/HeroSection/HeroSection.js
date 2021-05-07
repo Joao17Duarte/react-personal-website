@@ -16,8 +16,8 @@ export default function HeroSection() {
         </div>
       </HeroPic>
       <AboutMe>
-            About me  
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate odit, amet ducimus nemo optio ab at provident maiores enim harum nostrum. Iusto cupiditate saepe aperiam aut praesentium fugit laboriosam eos? Ea eum minima nobis facere reprehenderit aut quae! Error nobis aperiam reiciendis praesentium eaque repellendus explicabo impedit, earum consequatur veritatis.</p>
+             
+            <p>Hi there, I'm João Duarte, 28 years old from Lisbon, Portugal based since November 2017 in Hamburg, Germany. After a 6 year career in the Wellness area and with a passion for Tech, I decided to invest in my education. Started by doing online courses via the Udemy Platform, and since these courses, I got even more interested in coding. In 2020, I lost my job as Spa-Therapist and got the opportunity to do a Web Development Bootcamp here in Hamburg, where I improved my coding skills.</p>
       </AboutMe>
     </HeroWrapper>
     
@@ -33,7 +33,6 @@ const HeroWrapper = styled.div`
   flex-flow: row wrap;
   align-items: baseline;
   justify-content: center;
-  // background: crimson;
   padding: 20px;
 `
 

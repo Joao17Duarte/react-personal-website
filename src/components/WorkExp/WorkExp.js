@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-
+// import { Route, Switch } from 'react-router-dom'
 import { ReactComponent as SchoolIcon } from "./school.svg"
 import { ReactComponent as WorkIcon } from "./work.svg"
 // import './WorkExp.css'
@@ -16,7 +16,8 @@ export default function WorkExp() {
   return (
     <div>
           
-      <h4>Work Experience</h4>
+      <H3>Work Experience</H3>
+      <HR/>
 
       <VerticalTimeline>
         {timelineElements.map((element) => {
@@ -46,7 +47,7 @@ export default function WorkExp() {
               <JobDescription>{element.description}</JobDescription>
 
               {showButton && (
-                <Button href="/">
+                <Button target='_blank' href={element.url}>
                   {element.buttonText}
                 </Button>
               )}
@@ -60,9 +61,10 @@ export default function WorkExp() {
 
 
 
-const Title = styled.h3`
+const Title = styled.h4`
   padding-top: 5px;
   margin-top: 0;
+  font-weight: normal;
 `
 
 const Location = styled.h5`
@@ -71,28 +73,31 @@ const Location = styled.h5`
 `
 
 const JobDescription = styled.p`
-  
   margin: 1.5em 0 !important;
 `
 
 const Button = styled.a`
-text-decoration: none;
-padding: 0.5em 1em;
-border-radius: 5px;
-color: #C1292E;
-background-color: #333;
-box-shadow: 0 0 5px #888;
-&:hover{
-  box-shadow: 0 0 15px #C1292E;
-  color: white;
-  background-color: #555;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: #C1292E;
+  background-color: #333;
+  box-shadow: 0 0 5px #888;
+  &:hover{
+    box-shadow: 0 0 15px #C1292E;
+    color: white;
+    background-color: #555;
 }
 `
+const H3 = styled.h3`
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+`
 
-// const WorkBtn = styled.a`
-// background-color: #06d6a0;
-// `
-
-// const SchoolBtn = styled.a`
-// background-color: #f9c74f;
-// `
+const HR = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(155, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  margin-bottom: 2em;
+`
