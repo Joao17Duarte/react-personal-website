@@ -1,8 +1,7 @@
 import styled from "styled-components/macro";
-// import { Route, Switch } from 'react-router-dom'
-import { ReactComponent as SchoolIcon } from "./school.svg"
-import { ReactComponent as WorkIcon } from "./work.svg"
-// import './WorkExp.css'
+
+import { FaGraduationCap } from 'react-icons/fa';
+import { FaLaptop } from 'react-icons/fa';
 import timelineElements from "./TimelineElements"
 
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component"
@@ -29,11 +28,10 @@ export default function WorkExp() {
 
           return (
             <VerticalTimelineElement
-              key={element.key}
+              key={element.id}
               date={element.date}
-              
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
-              icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
+              icon={isWorkIcon ? <FaLaptop /> : <FaGraduationCap />}
               
             >
               <Title>
@@ -61,6 +59,19 @@ export default function WorkExp() {
 
 
 
+const H3 = styled.h3`
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3em;
+`
+
+const HR = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(155, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  margin-bottom: 2em;
+`
 const Title = styled.h4`
   padding-top: 5px;
   margin-top: 0;
@@ -74,6 +85,7 @@ const Location = styled.h5`
 
 const JobDescription = styled.p`
   margin: 1.5em 0 !important;
+  font-size:2em;
 `
 
 const Button = styled.a`
@@ -88,16 +100,4 @@ const Button = styled.a`
     color: white;
     background-color: #555;
 }
-`
-const H3 = styled.h3`
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-`
-
-const HR = styled.hr`
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(155, 0, 0, 1), rgba(0, 0, 0, 0)); 
-  margin-bottom: 2em;
 `
