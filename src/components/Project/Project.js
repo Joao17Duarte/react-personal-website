@@ -3,7 +3,9 @@ import styled from 'styled-components/macro'
 import { ProjectData } from './ProjectData'
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa'
 
-export default function Card({ slides }) {
+// import Hero from '../../assets/profile.jpg'
+
+export default function Projects({ slides }) {
   const [current, setCurrent] = useState(0)
   const length = slides.length
 
