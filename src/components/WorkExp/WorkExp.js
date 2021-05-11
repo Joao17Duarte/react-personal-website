@@ -59,6 +59,19 @@ export default function WorkExp() {
 
 
 
+const H3 = styled.h3`
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 3em;
+`
+
+const HR = styled.hr`
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(155, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  margin-bottom: 2em;
+`
 const Title = styled.h4`
   padding-top: 5px;
   margin-top: 0;
@@ -87,16 +100,4 @@ const Button = styled.a`
     color: white;
     background-color: #555;
 }
-`
-const H3 = styled.h3`
-  font-weight: normal;
-  text-transform: uppercase;
-  text-align: center;
-`
-
-const HR = styled.hr`
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(155, 0, 0, 1), rgba(0, 0, 0, 0)); 
-  margin-bottom: 2em;
 `

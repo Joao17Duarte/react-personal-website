@@ -47,7 +47,6 @@ const ContactItem = styled.a`
   font-size: 2em;
   
   &:hover{
-    font-size:2.3em;  
     color: #C1292E;
 }
 `

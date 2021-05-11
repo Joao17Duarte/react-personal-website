@@ -21,6 +21,18 @@ body {
   border-radius: 5px;
 }
 
+.item {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.item.active {
+  border-radius: 10px;
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
 @media only screen and (max-width: 1700px) {
   .vertical-timeline-element-date {
     display: block !important;
