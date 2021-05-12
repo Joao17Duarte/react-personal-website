@@ -1,12 +1,12 @@
 import styled from 'styled-components/macro'
-
+import profileImg from '../../assets/profile.jpg'
 export default function HeroSection() {
   return (
     <>
       <HeroWrapper>
         <HeroPic>
           <img
-            src="./assets/profile.jpg"
+            src={profileImg}
             alt="profile-pic"
             style={{ borderRadius: '50%', height: 300 }}
           />
