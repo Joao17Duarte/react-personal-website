@@ -37,14 +37,32 @@ const CodeLang = styled.ul`
   display:flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding:15px auto;
+  padding: 15px 0;
   list-style: none;
-  font-size:2.5em;
+  font-size: 2.5em;
 `
 
 const CodeItem = styled.li`
 margin: 10px;
 padding:10px;
+&:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 `
 
 const HR = styled.hr`
@@ -53,3 +71,4 @@ const HR = styled.hr`
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(155, 0, 0, 1), rgba(0, 0, 0, 0)); 
   margin-bottom: 2em;
 `
+
