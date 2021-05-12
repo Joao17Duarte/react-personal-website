@@ -45,7 +45,7 @@ export default function WorkExp() {
               <JobDescription>{element.description}</JobDescription>
 
               {showButton && (
-                <Button target='_blank' href={element.url}>
+                <Button target='_blank' href={element.url} rel="noreferrer">
                   {element.buttonText}
                 </Button>
               )}
