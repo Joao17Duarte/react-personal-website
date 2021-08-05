@@ -44,6 +44,11 @@ export default function Projects({ slides }) {
                   <div>
                     <Poster src={item.image} alt="project image" />
                     <ProjectName>{item.name}</ProjectName>
+                    {(typeof item.link != "undefined") ? (
+                      <ButtonWrapper>
+                        <Button href={item.link} target="blank">View Project </Button>
+                      </ButtonWrapper>
+                    ): ''}
                   </div>
                 )}
               </CardGrid>
@@ -128,4 +133,14 @@ color: #C1292E;
 z-index: 10;
 cursor: pointer;
 user-select: none;
+`
+const ButtonWrapper = styled.div`
+margin-top: 15px;
+`
+
+const Button = styled.a`
+  color: #C1292E;
+  text-decoration: none;
+font-size: 1.5rem;
+
 `

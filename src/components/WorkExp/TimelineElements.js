@@ -5,7 +5,7 @@ let timelineElements = [
     location: "Hamburg, Germany",
     description:
       "540 hours of programming practice (HTML5, CSS3, Javascript, React, Styled Components, ...). Create responsive, accessible layouts. Fetch and manage information from third-party API's. Build from zero a Final Project with React.",
-    buttonText: "View Final Project",
+    buttonText: "View Final Project Repo",
     url: "https://github.com/Joao17Duarte/capstone-project",
     date: "January 2021 - April 2021",
     icon: "work",
@@ -16,7 +16,7 @@ let timelineElements = [
     location: "Online",
     description:
       "52 hours Modern Javascript Bootcamp. Master the basics of the language, easily understanding variables, objects, arrays, and functions. Fetch and manage information from third-party API's.",
-    buttonText: "View Github repository",
+    buttonText: "View Github Repo",
     url: "https://github.com/Joao17Duarte/jsbootcampcourse",
     date: "May 2020 - November 2020",
     icon: "school",
