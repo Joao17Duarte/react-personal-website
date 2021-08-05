@@ -1,6 +1,6 @@
 import capstoneproject from '../../assets/capstoneproject.png'
-import csstricks from '../../assets/csstricks.png'
-import w3schools from '../../assets/w3schools.png'
+import weatherapp from '../../assets/weatherapp.png'
+
 
 const ProjectData = [
   {
@@ -10,18 +10,11 @@ const ProjectData = [
   },
   {
     id:1,
-    name: 'Css Tricks',
-    image: csstricks,
+    name: 'Weather App',
+    image: weatherapp,
 
   },
-  {
-    id:2,
-    name: 'W3 Schools',
-    image: w3schools,
-
-  },
-  
-  
+    
 ]
 
 export {ProjectData}
