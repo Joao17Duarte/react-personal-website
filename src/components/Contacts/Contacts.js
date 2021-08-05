@@ -3,6 +3,7 @@ import styled from "styled-components/macro";
 import { FaGithub } from 'react-icons/fa';
 import { FaXingSquare } from 'react-icons/fa';
 import { FaCodepen } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
 
 
 export default function Contacts() {
@@ -19,6 +20,9 @@ export default function Contacts() {
         </ContactItem>
         <ContactItem target='_blank' href="https://www.xing.com/profile/JoaoPauloFonseca_Duarte/cv">
           <FaXingSquare/>
+        </ContactItem>
+        <ContactItem target='_blank' href="https://www.linkedin.com/in/joao-p-f-duarte/">
+          <FaLinkedin/>
         </ContactItem>
         <ContactItem target='_blank' href="https://codepen.io/jo-o-duarte">
           <FaCodepen/>
