@@ -15,7 +15,6 @@ export default function App() {
         
         <CodeLanguage />
 
-        {/* <Projects slides={ProjectData} /> */}
         <Project slides={ProjectData} />
         
         <WorkExp />
