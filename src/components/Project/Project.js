@@ -44,9 +44,10 @@ export default function Projects({ slides }) {
                   <div>
                     <Poster src={item.image} alt="project image" />
                     <ProjectName>{item.name}</ProjectName>
-                    {(typeof item.link != "undefined") ? (
+                    {(typeof item != "undefined") ? (
                       <ButtonWrapper>
-                        <Button href={item.link} target="blank">View Project </Button>
+                        <Button href={item.live} target="_blank">Live Demo</Button>
+                        <Button href={item.repo} target="_blank">Project Repo</Button>
                       </ButtonWrapper>
                     ): ''}
                   </div>
@@ -109,7 +110,7 @@ const Poster = styled.img`
   
 `
 const ProjectName = styled.div`
-margin-top: 10px;
+margin-top: 20px;
 text-transform: uppercase;
 `
 
@@ -135,12 +136,21 @@ cursor: pointer;
 user-select: none;
 `
 const ButtonWrapper = styled.div`
-margin-top: 15px;
+margin: 25px auto;
+
 `
 
 const Button = styled.a`
   color: #C1292E;
   text-decoration: none;
-font-size: 1.5rem;
-
+  font-size: 0.8rem;
+  border: 1px solid #C1292E;
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 10px;
+  :hover {
+    color:white;
+    border: 1px solid whitesmoke;
+    box-shadow: 0 0 30px crimson;
+  }
 `

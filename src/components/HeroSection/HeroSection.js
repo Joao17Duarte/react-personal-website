@@ -19,7 +19,7 @@ export default function HeroSection() {
         </HeroPic>
         <AboutMe>
           <p>
-            Hi there, I'm João Duarte, 28 years old from Lisbon, Portugal and
+            Hi there, I'm João Duarte, 29 years old from Lisbon, Portugal and
             living since November 2017 in Hamburg, Germany. After a 6 year
             career in the Wellness area and with a passion for Tech, I decided
             to invest in my education.
